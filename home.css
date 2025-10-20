@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/backgroud.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color:#206453c2;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    z-index: 1000;
+    margin-bottom: 2rem;
+}
+
+nav .logo {
+    height: 3rem;
+    width: 3rem;
+    margin-top: 0.4rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    cursor: pointer;
+    content: ' ';
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+    min-height: 50vh;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+main .pera {
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 11rem;
+    font-size: 1rem;
+}
+
+main .pera h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.pera button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #206453;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+
+.pera button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: #206453;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    position: relative;
+    bottom: 0;
+    z-index: 100;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-left: 2rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer button {
+    margin-right: 1rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    background-color: #206453;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+
+footer button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -10,20 +10,32 @@
 
 <body>
     <header>
-        <nav class="nav">
-            <div class="logo">
-                <a href="home.html">
-                    <img src="img/krvlogo.png" alt="img">
-                </a>
-            </div>
-            <ul class="links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="img.html">Images</a></li>
-                <li><a href="video.html">Video</a></li>
-                <li><a href="#">Oudio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <header>
+            <nav class="nav">
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="img/krvlogo.png" alt="img">
+                    </a>
+                </div>
+
+                <!-- 👇 Yeh line add karo -->
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <!-- 👆 Yeh hamburger icon hai -->
+
+                <ul class="links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="img.html">Images</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="#">Oudio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
     </header>
     <main>
         <div class="pera">
@@ -39,6 +51,16 @@
             <a href="#top">Back to top</a>
         </button>
     </footer>
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const links = document.querySelector(".links");
+        toggle.onclick = () => links.classList.toggle("active");
+    </script>
+</body>
+
+</html>
+
 </body>
 
 </html>

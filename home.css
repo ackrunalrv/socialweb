@@ -1,3 +1,13 @@
+/* 🎨 ========== COLOR VARIABLES ========== */
+:root {
+  --primary-color: #00c3ff;         /* Highlight / Button / Links */
+  --text-color: #fff;               /* Default text color */
+  --bg-dark: #016B61;    /* Navbar / Footer background */
+  --bg-overlay: #00000099; /* Hero overlay */
+  --bg-hover: #000000e6;   /* Mobile menu background */
+}
+
+/* 🎯 GLOBAL RESET */
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +17,9 @@
 }
 
 body {
-  background: url("img/background.jpg") no-repeat center center/cover;
+  background: url("img/backgroud.jpg") no-repeat center center/cover;
   background-attachment: fixed;
-  color: #fff;
+  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -18,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--bg-dark);
   padding: 15px 40px;
   position: fixed;
   width: 100%;
@@ -40,7 +50,7 @@ body {
 
 .logo h2 {
   font-size: 1.4rem;
-  color: #00c3ff;
+  color: var(--primary-color);
 }
 
 .links {
@@ -50,14 +60,14 @@ body {
 }
 
 .links a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .links a:hover {
-  color: #00c3ff;
+  color: var(--primary-color);
 }
 
 /* ==== MENU TOGGLE ==== */
@@ -70,7 +80,7 @@ body {
 .menu-toggle span {
   height: 3px;
   width: 25px;
-  background: #fff;
+  background: var(--text-color);
   margin: 4px 0;
   border-radius: 2px;
 }
@@ -84,7 +94,7 @@ body {
 .section h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #00c3ff;
+  color: var(--primary-color);
 }
 
 .hero {
@@ -92,7 +102,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,0.6);
+  background: var(--bg-overlay);
 }
 
 .hero h1 {
@@ -101,12 +111,12 @@ body {
 }
 
 .hero span {
-  color: #00c3ff;
+  color: var(--primary-color);
 }
 
 .hero button {
   margin-top: 15px;
-  background: #00c3ff;
+  background: var(--primary-color);
   border: none;
   padding: 12px 30px;
   border-radius: 30px;
@@ -114,7 +124,7 @@ body {
 }
 
 .hero button a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: bold;
 }
@@ -167,7 +177,8 @@ video {
   gap: 15px;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   padding: 12px;
   border: none;
   border-radius: 8px;
@@ -175,10 +186,10 @@ video {
 }
 
 .contact button {
-  background: #00c3ff;
+  background: var(--primary-color);
   border: none;
   padding: 12px;
-  color: white;
+  color: var(--text-color);
   border-radius: 8px;
   cursor: pointer;
 }
@@ -187,13 +198,13 @@ video {
 footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0,0,0,0.7);
+  background: var(--bg-dark);
 }
 
 footer .top {
   display: inline-block;
   margin-top: 10px;
-  color: #00c3ff;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -203,7 +214,7 @@ footer .top {
     position: absolute;
     top: 70px;
     right: 0;
-    background: rgba(0,0,0,0.9);
+    background: var(--bg-hover);
     flex-direction: column;
     width: 200px;
     height: 0;
@@ -219,6 +230,7 @@ footer .top {
     display: flex;
   }
 }
+
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 2rem;
@@ -232,3 +244,15 @@ footer .top {
     grid-template-columns: 1fr;
   }
 }
+
+/* Hide all sections by default */
+.section {
+  display: none;
+}
+
+/* Active section show */
+.section.active {
+  display: block;
+}
+
+/* Rest of your CSS remains the same */

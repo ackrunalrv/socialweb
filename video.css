@@ -22,7 +22,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  background: rgba(0, 0, 0, 0.6);
+  background: #016B61;
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
@@ -67,7 +67,7 @@ main {
 }
 
 main h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 40px;
   color: #00bcd4;
 }

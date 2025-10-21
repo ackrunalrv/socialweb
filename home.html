@@ -1,66 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Web</title>
-    <link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Web | KRV</title>
+  <link rel="stylesheet" href="home.css">
 </head>
-
 <body>
-    <header>
-        <header>
-            <nav class="nav">
-                <div class="logo">
-                    <a href="home.html">
-                        <img src="img/krvlogo.png" alt="img">
-                    </a>
-                </div>
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        <img src="img/krvlogo.png" alt="Logo">
+        <h2>Social Web</h2>
+      </div>
 
-                <!-- 👇 Yeh line add karo -->
-                <div class="menu-toggle" id="menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <!-- 👆 Yeh hamburger icon hai -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-                <ul class="links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="img.html">Images</a></li>
-                    <li><a href="video.html">Video</a></li>
-                    <li><a href="#">Oudio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+      <ul class="links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#audio">Audio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    </header>
-    <main>
-        <div class="pera">
-            <h1>Welcome to Social Web</h1>
-            <p>This is a social media web page where you can share your Images,Videos and Oudio with your friends and
-                family. You can also view and like their posts. Enjoy your stay!</p>
-            <button type="button"><a href="img.html">View Images</a></button>
-        </div>
-    </main>
-    <footer>
-        <p>Copyright &copy; 2024 All rights reserved | This template is made with by KRV</p>
-        <button type="button">
-            <a href="#top">Back to top</a>
-        </button>
-    </footer>
+  <!-- ===== HOME SECTION ===== -->
+  <section id="home" class="section hero">
+    <div class="content">
+      <h1>Welcome to <span>Social Web</span></h1>
+      <p>Share your moments through <b>Images, Videos, and Audio</b> — connect with friends and enjoy creativity!</p>
+      <button><a href="#images">Get Started</a></button>
+    </div>
+  </section>
 
-    <script>
-        const toggle = document.getElementById("menu-toggle");
-        const links = document.querySelector(".links");
-        toggle.onclick = () => links.classList.toggle("active");
-    </script>
+  <!-- ===== IMAGES SECTION ===== -->
+  <section id="images" class="section">
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+      <img src="img/BX284141.jpg" alt="Image 1">
+      <img src="img/DD664447.jpg" alt="Image 2">
+      <img src="img/ES627234.jpg" alt="Image 3">
+      <img src="img/BX284141.jpg" alt="Image 4">
+    </div>
+  </section>
+
+  <!-- ===== VIDEOS SECTION ===== -->
+  <section id="videos" class="section">
+    <h2>Video Collection</h2>
+    <div class="video-container">
+      <video src="videos/video1.mp4" controls muted></video>
+      <video src="videos/video2.mp4" controls muted></video>
+    </div>
+  </section>
+
+  <!-- ===== AUDIO SECTION ===== -->
+  <section id="audio" class="section">
+    <h2>🎧 Audio Tracks</h2>
+    <div class="audio-container">
+      <audio controls>
+        <source src="audio/audio1.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls>
+        <source src="audio/audio2.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact">
+    <h2>📬 Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Social Web | Made with ❤️ by KRV</p>
+    <a href="#home" class="top">⬆ Back to Top</a>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const links = document.querySelector(".links");
+    toggle.onclick = () => links.classList.toggle("active");
+  </script>
 </body>
-
-</html>
-
-</body>
-
 </html>

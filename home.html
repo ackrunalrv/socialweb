@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Social Web | KRV</title>
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="home.css" />
 </head>
 
 <body>
   <header>
     <nav class="nav">
       <div class="logo">
-        <img src="img/krvlogo.png" alt="Logo">
+        <img src="img/krvlogo.png" alt="Logo" />
         <h2>Social Web</h2>
       </div>
 
@@ -69,48 +69,6 @@
         <source src="audio/audio1.mp3" type="audio/mpeg">
       </audio>
       <audio controls>
-        <source src="audio/audio1.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio1.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio1.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio1.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio1.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio1.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio1.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio1.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio1.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio2.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio2.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio2.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio2.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
-        <source src="audio/audio2.mp3" type="audio/mpeg">
-      </audio>
-      <audio controls>
         <source src="audio/audio2.mp3" type="audio/mpeg">
       </audio>
     </div>
@@ -131,28 +89,7 @@
     <a href="#home" class="top">⬆ Back to Top</a>
   </footer>
 
-  <!-- ===== JS ===== -->
-  <script>
-    const toggle = document.getElementById("menu-toggle");
-    const navLinks = document.querySelector(".links");
-    toggle.onclick = () => navLinks.classList.toggle("active");
-
-    const links = document.querySelectorAll(".links a");
-    const sections = document.querySelectorAll(".section");
-
-    // Show only the clicked section
-    links.forEach(link => {
-      link.addEventListener("click", e => {
-        e.preventDefault();
-        const targetId = link.getAttribute("href").substring(1);
-        sections.forEach(sec => sec.classList.remove("active"));
-        document.getElementById(targetId).classList.add("active");
-      });
-    });
-
-    // Show home section by default
-    document.getElementById("home").classList.add("active");
-  </script>
+  <script src="main.js"></script>
 </body>
 
 </html>

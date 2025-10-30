@@ -31,3 +31,8 @@ links.forEach(link => {
 
 // Default: home dikhaye
 showSection("home");
+const navLinks1 = document.getElementById('nav-links');
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  navLinks1.classList.toggle('active');
+});
